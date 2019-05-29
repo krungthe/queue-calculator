@@ -4,7 +4,20 @@
 </head>
 
 <body onload="startTime()">
-
+    <h2>Queue Calculator</h2>
+    <p>Enter the current queue number and yours, and then press the calculate button.</p>
+    <p>When the queue moves, update the current queue number with the arrows. After a few updates, the estimate becomes more reliable</p>
+    <p>There are two estimates, one based on the periods when the queue moves faster and another based on the average speed of the queue.</p>
+    
+    <form action="/action_page.php">
+        Current Queue:
+        <input type="number" name="currentQueue" min="1">
+        <p>
+            My queue number:
+            <input type="number" name="myQueue" min="1">
+        </p>
+        <input type="button" onclick="alert('ThnksOKBye!')" value="calculate">
+    </form>
 <div id="txt"></div>
 
 <script src=queue-calculator.js>
